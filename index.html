@@ -122,6 +122,100 @@
     .grid-opt { border: var(--border); background: var(--white); padding: 11px 10px; font: 700 12px "JetBrains Mono", monospace; cursor: pointer; text-align: center; box-shadow: var(--shadow-sm); transition: all .08s; border-radius: 10px; }
     .grid-opt.on { background: var(--yellow); border-color: var(--ink); color: var(--ink); }
     .grid-opt:hover { transform: translate(2px,2px); box-shadow: 2px 2px 0 var(--ink); }
+    /* DONASI QR */
+    .donasi-qr { width:100%; max-width:260px; border:3px solid var(--ink); box-shadow:var(--shadow-sm); border-radius:14px; display:block; margin:0 auto 14px; background:#fff; }
+  </style>
+</head>
+<body>
+<div id="loader"><div class="ld-title">BRAMZ</div><div class="ld-spark">✦ ✧ ✦ ✧ ✦</div></div>
+<div id="toast-wrap"></div>
+<div class="content-wrap" id="contentWrap">
+<header><span class="header-title">BRAMZ</span></header>
+<main>
+  <div id="mainMenu">
+    <button class="menu-btn y" data-panel="iqc"><span class="icon">#</span><span class="label">IQC</span></button>
+    <button class="menu-btn c" data-panel="brat"><span class="icon">&gt;</span><span class="label">BRAT</span></button>
+    <button class="menu-btn p" data-panel="ff"><span class="icon">+</span><span class="label">FAKE FF</span></button>
+    <button class="menu-btn g" data-panel="qr"><span class="icon">◈</span><span class="label">QR GENERATOR</span></button>
+    <button class="menu-btn purple" data-panel="source"><span class="icon">&lt;/&gt;</span><span class="label">LIHAT HTML</span></button>
+    <button class="menu-btn o" data-panel="dana"><span class="icon">=</span><span class="label">FAKE DANA</span></button>
+    <button class="menu-btn purple" data-panel="dl"><span class="icon">⤓</span><span class="label">DOWNLOADER</span></button>
+    <button class="menu-btn red" data-panel="channel"><span class="icon">◈</span><span class="label">SALURAN DEV</span></button>
+    <!-- 👇 DONASI: buka panel (QR + tombol manual) -->
+    <button class="menu-btn p" data-panel="donasi"><span class="icon">♥</span><span class="label">DONASI</span></button>
+  </div>
+
+  <!-- Panel IQC -->
+  <div class="panel" id="panel-iqc">
+    <div class="back-wrap"><button class="back-btn" data-panel="iqc">← Kembali</button></div>
+    <div class="chip">IQC CARD</div>
+    <div class="block">
+      <div class="field"><label>Text</label><input type="text" id="iqcText" maxlength="100" placeholder="Enter card text..."></div>
+      <div class="field">
+        <label>Provider</label>
+        <div class="provider-grid" id="iqcProviderGrid">
+          <button type="button" class="provider-opt on" data-provider="Axis">Axis</button>
+          <button type="button" class="provider-opt" data-provider="Telkomsel">Telkomsel</button>
+          <button type="button" class="provider-opt" data-provider="XL">XL</button>
+          <button type="button" class="provider-opt" data-provider="Indosat">Indosat</button>
+          <button type="button" class="provider-opt" data-provider="Tri">Tri</button>
+          <button typid #333;position:relative;z-index:1;border-radius:4px}
+    .lfill{height:100%;width:0;background:var(--yellow);transition:width .15s cubic-bezier(.22,1,.36,1);position:relative;z-index:1;box-shadow:0 0 30px rgba(255,231,76,.4);border-radius:4px}
+    .lfill::after{content:'';position:absolute;right:0;top:-2px;bottom:-2px;width:30px;background:linear-gradient(90deg,transparent,var(--yellow));filter:blur(6px)}
+    .rbox{display:none;margin-top:var(--space);border:var(--border);box-shadow:var(--shadow);background:var(--white);overflow:hidden;animation:resultPop .2s cubic-bezier(.22,1,.36,1)}
+    .rbox.on{display:block}@keyframes resultPop{from{opacity:0;transform:scale(.96)}to{opacity:1;transform:scale(1)}}
+    .rbox img{width:100%;height:auto;max-height:80vh;object-fit:contain;display:block;border-bottom:var(--border);background:var(--paper)}
+    .ract{display:flex;gap:8px;padding:10px;background:var(--paper);border-top:var(--border);flex-wrap:wrap}.ract .btn{flex:1;font-size:12px;padding:8px 12px;min-width:60px}
+    .type-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:12px}.type-opt{padding:10px 12px;border:var(--border);font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;cursor:pointer;box-shadow:var(--shadow-sm);background:var(--white);color:var(--ink);text-align:center;transition:all .08s;user-select:none}
+    .type-opt:hover{transform:translate(2px,2px);box-shadow:2px 2px 0 var(--ink)}.type-opt.on{background:var(--ink);color:var(--yellow);box-shadow:4px 4px 0 var(--yellow)}
+    .dl-btns{display:flex;flex-direction:column;gap:8px;padding:14px}.dl-a{display:block;padding:10px 14px;border:var(--border);font-size:13px;font-weight:800;letter-spacing:.8px;text-transform:uppercase;text-decoration:none;text-align:center;box-shadow:var(--shadow-sm);transition:all .08s;font-family:'Space Grotesk',sans-serif;background:var(--white);color:var(--ink)}
+    .dl-a:hover{transform:translate(2px,2px);box-shadow:2px 2px 0 var(--ink)}.dl-vid{background:var(--cyan)}.dl-aud{background:var(--yellow)}.dl-wm{background:#ddd}.dl-img{background:var(--green)}
+    .dl-meta{padding:12px 16px 0;font-family:'JetBrains Mono',monospace;font-size:12px;color:#444;line-height:1.5;border-bottom:var(--border);margin-bottom:0}.dl-thumb{width:100%;aspect-ratio:16/9;object-fit:cover;border-bottom:var(--border);display:none}
+    .channel-card{text-align:center;padding:20px}.channel-card .wa-icon{font-size:60px;line-height:1;margin-bottom:12px}.channel-card .channel-name{font-size:20px;font-weight:800;text-transform:uppercase;letter-spacing:2px;margin-bottom:8px}.channel-card .channel-desc{font-size:13px;color:#666;margin-bottom:16px}
+    .channel-btn{display:inline-block;padding:12px 28px;background:#25D366;color:#fff;border:var(--border);box-shadow:var(--shadow-sm);font-family:'Space Grotesk',sans-serif;font-size:14px;font-weight:800;letter-spacing:1px;text-transform:uppercase;text-decoration:none;cursor:pointer;transition:all .08s ease}
+    .channel-btn:hover{transform:translate(2px,2px);box-shadow:2px 2px 0 var(--ink)}.channel-btn:active{transform:translate(4px,4px);box-shadow:none}
+    .credit{position:fixed;bottom:12px;right:12px;font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:700;color:var(--ink);background:var(--yellow);padding:4px 12px;border:var(--border);box-shadow:var(--shadow-sm);z-index:999;letter-spacing:.5px;opacity:.8;transition:opacity .2s}.credit:hover{opacity:1}
+    @media(max-width:480px){ main{padding:12px}#mainMenu{gap:12px}.menu-btn{font-size:15px}.menu-btn .icon{font-size:24px}.menu-btn .label{font-size:12px} .header-title{font-size:20px;letter-spacing:4px}.type-grid{grid-template-columns:1fr 1fr}.ract .btn{font-size:10px;padding:6px 8px}.row .btn{font-size:11px;padding:8px 12px} .ld-title{font-size:44px;letter-spacing:6px}.channel-card .wa-icon{font-size:40px}.channel-card .channel-name{font-size:16px}.credit{font-size:10px;padding:3px 10px}.rbox img{max-height:70vh} }
+    body { background: #eef8ff; }
+    header { background: linear-gradient(135deg, #7ed6ff 0%, #4ca8e8 55%, #78c9f5 100%); border: 0; height: 76px; margin: 12px 12px 0; border-radius: 24px; box-shadow: 0 7px 0 rgba(15,15,17,.18); overflow: hidden; }
+    .header-title { color: #fff; text-shadow: 3px 4px 0 rgba(15,15,17,.28); letter-spacing: 7px; }
+    main { padding-top: 20px; }
+    .menu-btn, .block, .rbox, .lbox, .back-btn, .type-opt, .btn, .field input, .field textarea, .field select, .panel .chip, .credit, .channel-btn { border-radius: 18px; }
+    .menu-btn { overflow: hidden; }
+    .menu-btn .icon { border-radius: 50%; }
+    .block { border-radius: 22px; }
+    .rbox, .lbox { border-radius: 22px; }
+    .rbox img { border-radius: 19px 19px 0 0; }
+    .panel .chip { border-radius: 999px; }
+    .back-btn, .type-opt, .btn, .channel-btn { border-radius: 14px; }
+    .field input, .field textarea, .field select { border-radius: 14px; }
+    .credit { border-radius: 999px; }
+    #mainMenu { gap: 18px; }
+    @media (max-width: 480px) { header { height: 68px; margin: 10px 10px 0; border-radius: 20px; } #mainMenu { gap: 14px; } }
+    header { height: 58px !important; margin: 8px 10px 0 !important; border-radius: 18px !important; }
+    .header-title { font-size: 24px !important; letter-spacing: 5px !important; }
+    main { padding-top: 12px !important; }
+    @media (max-width: 480px) { header { height: 52px !important; margin: 7px 8px 0 !important; border-radius: 16px !important; } .header-title { font-size: 21px !important; letter-spacing: 4px !important; } }
+    html, body { overflow-x: hidden !important; overflow-y: auto !important; overscroll-behavior-y: auto !important; touch-action: pan-y !important; }
+
+    .provider-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-top:7px}
+    .provider-opt{border:var(--border);background:#fff;padding:11px 10px;border-radius:10px;font:700 12px "JetBrains Mono",monospace;cursor:pointer;box-shadow:var(--shadow-sm);transition:all .08s;text-align:center}
+    .provider-opt.on{background:#ffe74c;border-color:var(--ink);color:var(--ink)}
+    .provider-opt:hover{transform:translate(2px,2px);box-shadow:2px 2px 0 var(--ink)}
+    .provider-opt:active{transform:scale(.98)}
+
+    #sourceOpen{position:relative;z-index:20;pointer-events:auto;cursor:pointer}
+    #sourceRbox{display:none}#sourceRbox.on{display:block}#sourceCode{min-height:120px}
+    #sourceLbox .lrow { color: var(--yellow); }
+    /* QR result */
+    #qrRbox .qr-info { padding: 12px 16px; font-family: 'JetBrains Mono', monospace; font-size: 13px; background: var(--paper); border-bottom: var(--border); }
+    #qrRbox .qr-info span { font-weight: 700; }
+    #qrRbox canvas, #qrRbox img { display: block; max-width: 100%; max-height: 70vh; margin: 0 auto; border-bottom: var(--border); }
+    /* Grid ukuran */
+    .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-top: 7px; }
+    .grid-opt { border: var(--border); background: var(--white); padding: 11px 10px; font: 700 12px "JetBrains Mono", monospace; cursor: pointer; text-align: center; box-shadow: var(--shadow-sm); transition: all .08s; border-radius: 10px; }
+    .grid-opt.on { background: var(--yellow); border-color: var(--ink); color: var(--ink); }
+    .grid-opt:hover { transform: translate(2px,2px); box-shadow: 2px 2px 0 var(--ink); }
     /* DONASI link — biar tampil sama seperti menu-btn */
     a.menu-btn { text-decoration: none; }
   </style>
